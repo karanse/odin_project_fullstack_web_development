@@ -8,6 +8,7 @@ import TodoList from './components/TodoList.jsx';
 import Animal from './components/Animal.jsx';
 import List from './components/List.jsx';
 import ConditionalList from './components/ConditionalList.jsx';
+import PackList from './components/PackList.jsx';
 import './index.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <h1>Animals starts with L:</h1>
       <ConditionalList animals = {animals} />
     </div>
+    <PackList />
 
     </>
   )
