@@ -11,6 +11,7 @@ import List from './components/List.jsx';
 import ConditionalList from './components/ConditionalList.jsx';
 import PackList from './components/PackList.jsx';
 import Button from './components/Button.jsx'
+import BackgroundColor from './components/BackgroundColor.jsx';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <Button fontSize={20}/>
       <Button text="Don't Click me!" color="red"  />
     </div>
+    <BackgroundColor />
 
     </>
   )
