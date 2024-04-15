@@ -1,5 +1,6 @@
 
 import './App.css';
+import './index.css';
 import Greeting from './components/Greeting.jsx';
 import Goodbye from './components/Goodbye.jsx';
 import Division from './components/Division.jsx';
@@ -9,10 +10,15 @@ import Animal from './components/Animal.jsx';
 import List from './components/List.jsx';
 import ConditionalList from './components/ConditionalList.jsx';
 import PackList from './components/PackList.jsx';
-import './index.css';
+import Button from './components/Button.jsx'
+
 
 function App() {
   const animals = ["Lion", "Cow", "Snake", "Lizard"];
+  const handleButtonClick = ()=> {
+    window.location.href = "http://www.google.com";
+  };
+
   return (
     <>
     <Greeting/>
@@ -30,6 +36,11 @@ function App() {
       <ConditionalList animals = {animals} />
     </div>
     <PackList />
+    <div>
+      <Button handleClick={handleButtonClick}/>
+      <Button fontSize={20}/>
+      <Button text="Don't Click me!" color="red"  />
+    </div>
 
     </>
   )
