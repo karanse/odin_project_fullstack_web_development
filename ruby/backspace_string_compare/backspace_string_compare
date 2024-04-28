@@ -1,0 +1,19 @@
+class BackspaceCompare
+  def initialize(str1, str2)
+    @str1 = str1
+    @str2 = str2
+  end
+
+  def build(str)
+    arr = []
+    str.chars.each { |c| c != '#' ? arr.push(c) : arr.pop }
+    arr.join
+  end
+
+  def backspace_compare
+    build(@str1) == build(@str2)
+  end
+end
+
+result = BackspaceCompare.new("ab#c", "ad#c")
+p result.backspace_compare
